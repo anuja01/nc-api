@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "outDir": "./dist",
-    "rootDir": "./src",
+    "target": "ES6", // or the target you prefer
+    "module": "commonjs", // Use 'commonjs' for Node.js environment
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"], // Ensure 'node' is listed here
+    "typeRoots": ["node_modules/@types"], // Ensure this path is correct
+    "outDir": "./dist" // Adjust to your output directory
   },
-  "include": ["src"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }
